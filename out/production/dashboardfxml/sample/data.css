@@ -1,0 +1,16 @@
+.root{-fx-background-color: #121212;}
+.hbox{-fx-background-color: transparent;}
+.grid{-fx-background-color: transparent;}
+#verticalTitle,
+#horizontalTitle{
+    -fx-text-fill: #BB86FC;
+    -fx-font-size: 20;
+}
+.label{-fx-font-size:15;}
+
+#kpvt,#kivt,#kdvt,#misvt,#masvt,#mipvt,#mapvt,#kpht,#kiht,#kdht,
+#misht,#masht,#mipht,#mapht{-fx-text-fill: #03DAC6;}
+
+.label{-fx-text-fill:#CF6679}
+
+.slider .thumb{-fx-background-color: #BB86FC;}

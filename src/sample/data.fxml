@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.dataController" stylesheets="@data.css"
+      spacing="50">
+    <GridPane fx:id="vertical">
+        <Label fx:id="verticalTitle" text="vertical:" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="1"/>
+        <Label text="Kp" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Slider fx:id="kpv" GridPane.rowIndex="2" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="kpvt" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="ki" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Slider fx:id="kiv" GridPane.rowIndex="4" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="kivt" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Kd" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <Slider fx:id="kdv" GridPane.rowIndex="6" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="kdvt" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+        <Label text="min position" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+        <Slider fx:id="mipv" GridPane.rowIndex="8" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="mipvt" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+
+        <Label text="max position" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+        <Slider fx:id="mapv" GridPane.rowIndex="10" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="mapvt" GridPane.rowIndex="10" GridPane.columnIndex="1"/>
+
+        <Label text="max speed" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+        <Slider fx:id="masv" GridPane.rowIndex="12" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="masvt" GridPane.rowIndex="12" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <GridPane fx:id="horizontal">
+        <Label fx:id="horizontalTitle" text="vertical:" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="1"/>
+        <Label text="Kp" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Slider fx:id="kph" GridPane.rowIndex="2" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="kpht" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="ki" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Slider fx:id="kih" GridPane.rowIndex="4" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="kiht" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Kd" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <Slider fx:id="kdh" GridPane.rowIndex="6" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="kdht" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+        <Label text="min position" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+        <Slider fx:id="miph" GridPane.rowIndex="8" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="mipht" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+
+        <Label text="max position" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+        <Slider fx:id="maph" GridPane.rowIndex="10" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1"/>
+        <Label fx:id="mapht" GridPane.rowIndex="10" GridPane.columnIndex="1"/>
+
+        <Label text="max speed" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+        <Slider fx:id="mash" GridPane.rowIndex="12" GridPane.columnIndex="0" value="0" blockIncrement=".01"
+                max="1" />
+        <Label fx:id="masht" GridPane.rowIndex="12" GridPane.columnIndex="1"/>
+    </GridPane>
+
+</HBox>
