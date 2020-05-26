@@ -46,5 +46,5 @@ Gmail:
 
 
 ## License
-dashboard: [MIT](https://github.com/adamrubinfeld/Dashboard/blob/master/LICENSE)
+dashboard: [MIT](https://github.com/adamrubinfeld/Dashboard/blob/master/LICENSE)  
 ftc app: [MIT]()
