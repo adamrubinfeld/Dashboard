@@ -4,11 +4,12 @@ solve them, and to present data in a way that is more convenient to read.
 
 
 ## Installation
-Download the [FTC app]()  
-Download the [FTC dashboard](https://github.com/adamrubinfeld/Dashboard)  
-Open the FTC dashboard on [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)  
+Download [FTC app]()  
+Download [FTC dashboard](https://github.com/adamrubinfeld/Dashboard)  
+Download [Intellij](https://www.jetbrains.com/idea/download/#section=windows)  
+Open the FTC dashboard on Intellij 
 
-## Usage
+# Usage
 Through a computer, connect to direct WiFi through robot control  
 Open the FTC dashboard  
 Copy the IP address on the console  
@@ -37,14 +38,14 @@ markEndOfUptade();
 ```
   
 
-## Contact me
+# Contact me
 Instagram:  
-[adamrubinfeld19](https://www.instagram.com/direct/t/340282366841710300949128192327696615691)
+[adamrubinfeld19](https://instagram.com/adamrubinfeld19?igshid=1d8lyv6hdvi601)
 
 Gmail:  
 [adamrubin01@gmail.com](https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSMVxqnqjkDBnBKXKqnjvjxkZFlxTglZDNmGXwhhQsrRQdMvmctGDhgBXLWnncTQgQGKHtdM)
 
 
-## License
+# License
 dashboard: [MIT](https://github.com/adamrubinfeld/Dashboard/blob/master/LICENSE)  
 ftc app: [MIT]()
