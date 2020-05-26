@@ -16,6 +16,16 @@ Copy the IP address on the console
 Paste in your Teleop/autonomus
 ```java
 Threat dashboard = new mainThreat("<ip>", <team number>);
+
+@Override
+public void init(){
+    dashboard.start();
+}
+
+@Override
+public void stop(){
+    client.close();
+}
 ```
 Enter in main Threat  
 Enter the data you want to have in each graph
