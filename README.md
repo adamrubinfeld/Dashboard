@@ -4,7 +4,7 @@ solve them, and to present data in a way that is more convenient to read.
 
 made by   
 adam rubinfeld (orbit 14872 alumni)  
-and apollo 9662 (isreal)
+and apollo 9662 (Israel)
 
 
 ## Installation
