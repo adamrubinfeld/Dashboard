@@ -2,6 +2,10 @@
 was created to help teams find software problems as well as  
 solve them, and to present data in a way that is more convenient to read.
 
+made by   
+adam rubinfeld (orbit 14872 alumni)  
+and apollo 9662
+
 
 ## Installation
 Download [FTC app](https://github.com/adamrubinfeld/FTC-app)  
