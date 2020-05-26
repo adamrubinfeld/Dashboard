@@ -37,8 +37,8 @@ public class MessageProcessing {
                     if(id.equals("VERTICAL")){
                         processVertical(splitString);
                     }else{
-                        if (id.equals("POS")){
-                            processPos(splitString);
+                        if (id.equals("CLOSE")){
+                            server.close();
                         }
                     }
                 }

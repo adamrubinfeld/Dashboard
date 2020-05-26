@@ -84,17 +84,13 @@ public class dataController {
     double lastDV = 0;
     double lastMiPV = 0;
     double lastMaPV = 0;
-    double lastMiSV = 0;
     double lastMaSV = 0;
-    double lastStart = 0;
-    double lastCube = 0;
 
     double lastPH = 0;
     double lastIH = 0;
     double lastDH = 0;
     double lastMiPH = 0;
     double lastMaPH = 0;
-    double lastMiSH = 0;
     double lastMaSH = 0;
 
     public void initialize(){
