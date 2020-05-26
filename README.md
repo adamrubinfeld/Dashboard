@@ -4,7 +4,7 @@ solve them, and to present data in a way that is more convenient to read.
 
 
 ## Installation
-Download [FTC app]()  
+Download [FTC app](https://github.com/adamrubinfeld/FTC-app)  
 copy the file from ftc app and paste in team code  
 Download [FTC dashboard](https://github.com/adamrubinfeld/Dashboard)  
 Download [Intellij](https://www.jetbrains.com/idea/download/#section=windows)  
@@ -49,4 +49,4 @@ Gmail:
 
 # License
 dashboard: [MIT](https://github.com/adamrubinfeld/Dashboard/blob/master/LICENSE)  
-ftc app: [MIT]()
+ftc app: [MIT](https://github.com/adamrubinfeld/FTC-app/blob/master/LICENSE)
