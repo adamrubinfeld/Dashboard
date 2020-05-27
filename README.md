@@ -1,25 +1,29 @@
 # FTC dashboard
-was created to help teams find software problems as well as  
-solve them, and to present data in a way that is more convenient to read.
+Dashboard is a useful tool for FTC teams, helping them to review and debugg code better.
 
 made by   
-adam rubinfeld (orbit 14872 alumni)  
-and apollo 9662 (Israel)
+1. adam rubinfeld (orbit 14872 alumni)  
+2. team apollo 9662 (Israel)
+3. Ofir Siboni (FRC Steampunk 1577)
+
 
 
 ## Installation
-Download [FTC app](https://github.com/adamrubinfeld/FTC-app)  
-copy the file from ftc app and paste in team code  
-Download [FTC dashboard](https://github.com/adamrubinfeld/Dashboard)  
-Download [Intellij](https://www.jetbrains.com/idea/download/#section=windows)  
-Open the FTC dashboard on Intellij 
+- make sure you have updated Java installed on your mechine.
+- Download [FTC app](https://github.com/adamrubinfeld/FTC-app)  
+- copy the file from ftc app and paste in team code  
+- Download and unzip [FTC dashboard](https://github.com/adamrubinfeld/Dashboard) 
+- Install [Intellij](https://www.jetbrains.com/idea/download/#section=windows) On your mechine. 
+
 
 # Usage
-Through a computer, connect to direct WiFi through robot control  
-Open the FTC dashboard  
-Copy the IP address on the console  
+- Before making any changes, make sure to backup your Robot's code, If you have Github repository - It might be a good time to [commit & push](https://readwrite.com/2013/10/02/github-for-beginners-part-2/)
+- Through your computer, connect to Wifi Direct hosted by your robot controller.  
+- Open FTC Dashboard on Intellij and run it.
+- Copy the IP address on the console  
 ![image1](/images/image1.png)  
-Paste in your Teleop/autonomus
+
+- Add this code in your Teleop/autonomus
 ```java
 Threat dashboard = new mainThreat("<ip>", <team number>);
 
@@ -32,9 +36,10 @@ public void init(){
 public void stop(){
     client.close();
 }
-```
-Enter in main Threat  
-Enter the data you want to have in each graph
+``
+- Now, each time you want to add information to your dashboard, you should use Dashboard functions,
+  You will note that information will be displayed on the opened window while running.
+ example:
 ```java
 sendDrive(<lf>,<lb>,<rf>,<rb>)
 sendVertical(<speed>,<current pos>,<wanted pos>);
@@ -48,7 +53,7 @@ Instagram:
 [adamrubinfeld19](https://instagram.com/adamrubinfeld19?igshid=1d8lyv6hdvi601)
 
 Gmail:  
-[adamrubin01@gmail.com](https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSMVxqnqjkDBnBKXKqnjvjxkZFlxTglZDNmGXwhhQsrRQdMvmctGDhgBXLWnncTQgQGKHtdM)
+[adamrubin01@gmail.com](mailto:adamrubin01@gmail.com)
 
 
 # License
