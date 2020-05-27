@@ -13,7 +13,7 @@ made by
 - Download [FTC app](https://github.com/adamrubinfeld/FTC-app)  
 - copy the file from ftc app and paste in team code  
 - Download and unzip [FTC dashboard](https://github.com/adamrubinfeld/Dashboard) 
-- Install [Intellij](https://www.jetbrains.com/idea/download/#section=windows) On your mechine. 
+- Install [Intellij](https://www.jetbrains.com/idea/download/#section=windows) On your computer. 
 
 
 # Usage
