@@ -39,6 +39,7 @@ public void stop(){
 ```
 - Now, each time you want to add information to your dashboard, you should use Dashboard functions,
   You will note that information will be displayed on the opened window while running.
+  go to [mainThreat](https://github.com/adamrubinfeld/FTC-app/blob/master/dashboardUtill/mainThreat.java) and change what you want to see in each graph
  example:
 ```java
 sendDrive(<lf>,<lb>,<rf>,<rb>)
