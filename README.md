@@ -36,7 +36,7 @@ public void init(){
 public void stop(){
     client.close();
 }
-``
+```
 - Now, each time you want to add information to your dashboard, you should use Dashboard functions,
   You will note that information will be displayed on the opened window while running.
  example:
