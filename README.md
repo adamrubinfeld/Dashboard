@@ -1,6 +1,13 @@
 # FTC dashboard
 Dashboard is a useful tool for FTC teams, helping them to review and debugg code better.
 
+graph window:  
+![image2](/images/image2.png)  
+
+data window:  
+![image3](/images/image3.png)    
+
+
 made by   
 1. adam rubinfeld (orbit 14872 alumni)  
 2. team apollo 9662 (Israel)

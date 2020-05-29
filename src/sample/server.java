@@ -51,9 +51,9 @@ public class server extends Thread{
      public static void close(){
          try {
              ss.close();
-            s.close();
-            dis.close();
-            dos.close();
+             s.close();
+             dis.close();
+             dos.close();
          } catch (IOException e) {
              e.printStackTrace();
          }
