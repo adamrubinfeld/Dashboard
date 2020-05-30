@@ -15,7 +15,9 @@ public class Main extends Application {
 
 
 
+    //TODO change to false if you don't want to see graph window
     private static boolean showGraphWindow = true;
+    //TODO change to false if you don't want to see data window
     private static boolean showDataWindow = true;
 
     public static Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
