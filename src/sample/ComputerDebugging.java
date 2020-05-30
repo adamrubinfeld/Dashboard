@@ -7,7 +7,7 @@ public class ComputerDebugging {
     private static DecimalFormat df = new DecimalFormat("#.00");
 
     public static void markEndOfUpdate(){
-             server.send(messageBuilder.toString());
+        server.send(messageBuilder.toString());
         messageBuilder.delete(0, messageBuilder.length());
     }
 
