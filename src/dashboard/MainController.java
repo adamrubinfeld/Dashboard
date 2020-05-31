@@ -3,6 +3,7 @@ package dashboard;
 import dashboard.tcp.ComputerDebugging;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
@@ -10,6 +11,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.stage.WindowEvent;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -78,11 +80,12 @@ public class MainController {
     private double lastMaP2 = 0;
     private double lastMaS2 = 0;
 
+    private double[] last = new double[11];
+
     private static final int WINDOW_SIZE = 13;
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("ss:SS");
 
     public void initialize(){
-
         lf.setName("lf");
         rf.setName("rf");
         lb.setName("lb");
@@ -112,8 +115,8 @@ public class MainController {
             Platform.runLater(() -> {
                 Date now = new Date();
                 addDataToList(lf,                now, driveData[0]);
-                addDataToList(rf,                now, driveData[1]);
-                addDataToList(lb,                now, driveData[2]);
+                addDataToList(lb,                now, driveData[1]);
+                addDataToList(rf,                now, driveData[2]);
                 addDataToList(rb,                now, driveData[3]);
                 addDataToList(anglel,            now, driveData[4]);
                 addDataToList(horizontalRPM,     now, horizontalData[0]);
@@ -134,10 +137,7 @@ public class MainController {
                     horizontalCurrent.getData().remove(0);
                     verticalTarget.getData().remove(   0);
                     verticalCurrent.getData().remove(  0);
-
                 }
-
-
                 setLabelValueDouble(Kp1T, Kp1S);
                 setLabelValueDouble(Ki1T, Ki1S);
                 setLabelValueDouble(Kd1T, Kd1S);
@@ -147,7 +147,7 @@ public class MainController {
                 setLabelValueDouble(Kp2T, Kp2S);
                 setLabelValueDouble(Ki2T, Ki2S);
                 setLabelValueDouble(Kd2T, Kd2S);
-                setLabelValueInt(    s2T, s2S);
+                setLabelValueDouble( s2T, s2S);
                 setLabelValueInt(  mip2T, mip2S);
                 setLabelValueInt(  map2T, map2S);
 
@@ -166,7 +166,7 @@ public class MainController {
                 if (P1!=lastP1||I1!=lastI1||D1!=lastD1)            ComputerDebugging.sendPIDVertical(P1, I1, D1);
                 if (P2!=lastP2||I2!=lastI2||D2!=lastD2)            ComputerDebugging.sendPIDHorizontal(P2, I2, D2);
                 if (mip1!=lastMiP1||map1!=lastMaP1||mas1!=lastMaS1)ComputerDebugging.sendDataVertical(mip1, map1, mas1);
-                if (mip2!=lastMiP2||map2!=lastMaP2||mas2!=lastMaS2)ComputerDebugging.sendDataVertical(mip2, map2, mas2);
+                if (mip2!=lastMiP2||map2!=lastMaP2||mas2!=lastMaS2)ComputerDebugging.sendDataHorizontal(mip2, map2, mas2);
                 if (!messageBuilder.toString().equals(""))         ComputerDebugging.markEndOfUpdate();
 
                 lastP1    = P1;
@@ -197,5 +197,9 @@ public class MainController {
 
     private void addDataToList(XYChart.Series s, Date x, double y){
         s.getData().add(new XYChart.Data<>(simpleDateFormat.format(x), y));
+    }
+
+    public void close(){
+        csv.write(Double.parseDouble(Kp1T.getText()),0,0,0,0,0,0,0,0,0,0,0);
     }
 }
