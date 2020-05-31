@@ -55,57 +55,57 @@
                 <TitledPane id="verticla" fx:id="vertical" animated="false" text="vertical">
                     <VBox prefHeight="200.0" prefWidth="200.0" spacing="7.5" styleClass="titled-pane">
                         <Label text="Kp" />
-                        <Slider fx:id="Kp1S" />
+                        <Slider fx:id="Kp1S" max="1" majorTickUnit="0.01"/>
                         <Label fx:id="Kp1T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="Ki" />
-                        <Slider fx:id="Ki1S" />
+                        <Slider fx:id="Ki1S" max="1" majorTickUnit="0.01" />
                         <Label fx:id="Ki1T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="Kd" />
-                        <Slider fx:id="Kd1S" />
+                        <Slider fx:id="Kd1S" max="1" majorTickUnit="0.01"/>
                         <Label fx:id="Kd1T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="max speed" />
-                        <Slider fx:id="s1S" />
+                        <Slider fx:id="s1S" max="1" majorTickUnit="0.5"/>
                         <Label fx:id="s1T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="min position" />
-                        <Slider fx:id="mip1S" />
-                        <Label fx:id="mip1T" prefHeight="25.0" prefWidth="36.0" />
+                        <Slider fx:id="mip1S" max="2000" majorTickUnit="10"/>
+                        <Label fx:id="mip1T" prefHeight="25.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="max position" />
-                        <Slider fx:id="map1S" />
-                        <Label fx:id="map1T" prefHeight="25.0" prefWidth="36.0" />
+                        <Slider fx:id="map1S" max="2000" majorTickUnit="10"/>
+                        <Label fx:id="map1T" prefHeight="25.0" />
                         <Separator prefWidth="200.0" />
                     </VBox>
                 </TitledPane>
                 <TitledPane fx:id="horizontal" animated="false" text="horizontal">
                     <VBox prefHeight="200.0" prefWidth="200.0" spacing="7.5" styleClass="titled-pane">
                         <Label text="Kp" />
-                        <Slider fx:id="Kp2S" />
+                        <Slider fx:id="Kp2S" max="1" majorTickUnit="0.01" />
                         <Label fx:id="Kp2T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="Ki" />
-                        <Slider fx:id="Ki2S" />
+                        <Slider fx:id="Ki2S" max="1" majorTickUnit="0.01" />
                         <Label fx:id="Ki2T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="Kd" />
-                        <Slider fx:id="Kd2S" />
+                        <Slider fx:id="Kd2S" max="1" majorTickUnit="0.01" />
                         <Label fx:id="Kd2T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="max speed" />
-                        <Slider fx:id="s2S" />
+                        <Slider fx:id="s2S" max="1"   />
                         <Label fx:id="s2T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="min position" />
-                        <Slider fx:id="mip2S" />
-                        <Label fx:id="mip2T" prefHeight="25.0" prefWidth="36.0" />
+                        <Slider fx:id="mip2S" max="2000" majorTickUnit="10"/>
+                        <Label fx:id="mip2T" prefHeight="25.0"/>
                         <Separator prefWidth="200.0" />
                         <Label text="max position" />
-                        <Slider fx:id="map2S" />
+                        <Slider fx:id="map2S" max="2000" majorTickUnit="10"/>
                         <Separator prefWidth="200.0" />
-                        <Label fx:id="map2T" prefHeight="25.0" prefWidth="36.0" />
+                        <Label fx:id="map2T" prefHeight="25.0"/>
                     </VBox>
                 </TitledPane>
             </panes>

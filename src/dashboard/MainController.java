@@ -140,18 +140,18 @@ public class MainController {
                 }
 
 
-                setLabelValue(Kp1T, Kp1S);
-                setLabelValue(Ki1T, Ki1S);
-                setLabelValue(Kd1T, Kd1S);
-                setLabelValue(s1T, s1S);
-                setLabelValue(mip1T, mip1S);
-                setLabelValue(map1T, map1S);
-                setLabelValue(Kp2T, Kp2S);
-                setLabelValue(Ki2T, Ki2S);
-                setLabelValue(Kd2T, Kd2S);
-                setLabelValue(s2T, s2S);
-                setLabelValue(mip2T, mip2S);
-                setLabelValue(map2T, map2S);
+                setLabelValueDouble(Kp1T, Kp1S);
+                setLabelValueDouble(Ki1T, Ki1S);
+                setLabelValueDouble(Kd1T, Kd1S);
+                setLabelValueDouble(s1T, s1S);
+                setLabelValueInt(mip1T, mip1S);
+                setLabelValueInt(map1T, map1S);
+                setLabelValueDouble(Kp2T, Kp2S);
+                setLabelValueDouble(Ki2T, Ki2S);
+                setLabelValueDouble(Kd2T, Kd2S);
+                setLabelValueInt(s2T, s2S);
+                setLabelValueInt(mip2T, mip2S);
+                setLabelValueInt(map2T, map2S);
 
                 double P1    = Kp1S.getValue();
                 double I1    = Ki1S.getValue();
@@ -199,8 +199,12 @@ public class MainController {
     }
 
 
-    private void setLabelValue(Label l, Slider s){
+    private void setLabelValueDouble(Label l, Slider s){
         l.textProperty().bind(Bindings.format("%.2f", s.valueProperty()));
+    }
+
+    private void setLabelValueInt(Label l, Slider s){
+        l.textProperty().bind(Bindings.format("%.0f", s.valueProperty()));
     }
 
     private void addDataToList(XYChart.Series s, Date x, double y){
