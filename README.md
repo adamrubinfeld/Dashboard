@@ -2,8 +2,7 @@
 Dashboard is a useful tool for FTC teams, helping them to review and debugg code better.
 
 image:  
-[image](images/image2.png)  
-
+![image2](/images/image2.png) 
 
 made by   
 1. adam rubinfeld (orbit 14872 alumni)  
