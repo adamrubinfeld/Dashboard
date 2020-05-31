@@ -26,55 +26,54 @@ public class MainController {
     @FXML private LineChart<CategoryAxis, NumberAxis> rpm;
     @FXML private LineChart<CategoryAxis, NumberAxis> ticks;
 
-    XYChart.Series lf = new XYChart.Series();
-    XYChart.Series rf = new XYChart.Series();
-    XYChart.Series lb = new XYChart.Series();
-    XYChart.Series rb = new XYChart.Series();
-    XYChart.Series verticalRPM = new XYChart.Series();
-    XYChart.Series horizontalRPM = new XYChart.Series();
-    XYChart.Series horizontalTarget = new XYChart.Series();
+    XYChart.Series lf                = new XYChart.Series();
+    XYChart.Series rf                = new XYChart.Series();
+    XYChart.Series lb                = new XYChart.Series();
+    XYChart.Series rb                = new XYChart.Series();
+    XYChart.Series verticalRPM       = new XYChart.Series();
+    XYChart.Series horizontalRPM     = new XYChart.Series();
+    XYChart.Series horizontalTarget  = new XYChart.Series();
     XYChart.Series horizontalCurrent = new XYChart.Series();
-    XYChart.Series verticalTarget = new XYChart.Series();
-    XYChart.Series verticalCurrent = new XYChart.Series();
-    XYChart.Series anglel = new XYChart.Series();
+    XYChart.Series verticalTarget    = new XYChart.Series();
+    XYChart.Series verticalCurrent   = new XYChart.Series();
+    XYChart.Series anglel            = new XYChart.Series();
 
 
     @FXML private Slider Kp1S;
-    @FXML private Label Kp1T;
+    @FXML private Label  Kp1T;
     @FXML private Slider Ki1S;
-    @FXML private Label Ki1T;
+    @FXML private Label  Ki1T;
     @FXML private Slider Kd1S;
-    @FXML private Label Kd1T;
+    @FXML private Label  Kd1T;
     @FXML private Slider s1S;
-    @FXML private Label s1T;
+    @FXML private Label  s1T;
     @FXML private Slider mip1S;
-    @FXML private Label mip1T;
+    @FXML private Label  mip1T;
     @FXML private Slider map1S;
-    @FXML private Label map1T;
+    @FXML private Label  map1T;
 
     @FXML private Slider Kp2S;
-    @FXML private Label Kp2T;
+    @FXML private Label  Kp2T;
     @FXML private Slider Ki2S;
-    @FXML private Label Ki2T;
+    @FXML private Label  Ki2T;
     @FXML private Slider Kd2S;
-    @FXML private Label Kd2T;
+    @FXML private Label  Kd2T;
     @FXML private Slider s2S;
-    @FXML private Label s2T;
+    @FXML private Label  s2T;
     @FXML private Slider mip2S;
-    @FXML private Label mip2T;
+    @FXML private Label  mip2T;
     @FXML private Slider map2S;
-    @FXML private Label map2T;
+    @FXML private Label  map2T;
 
-    private double lastP1 = 0;
-    private double lastI1 = 0;
-    private double lastD1 = 0;
+    private double lastP1   = 0;
+    private double lastI1   = 0;
+    private double lastD1   = 0;
     private double lastMiP1 = 0;
     private double lastMaP1 = 0;
     private double lastMaS1 = 0;
-
-    private double lastP2 = 0;
-    private double lastI2 = 0;
-    private double lastD2 = 0;
+    private double lastP2   = 0;
+    private double lastI2   = 0;
+    private double lastD2   = 0;
     private double lastMiP2 = 0;
     private double lastMaP2 = 0;
     private double lastMaS2 = 0;
@@ -112,30 +111,29 @@ public class MainController {
 
             Platform.runLater(() -> {
                 Date now = new Date();
-                addDataToList(lf, now, driveData[0]);
-                addDataToList(rf, now, driveData[1]);
-                addDataToList(lb, now, driveData[2]);
-                addDataToList(rb, now, driveData[3]);
-                addDataToList(anglel, now, driveData[4]);
-                addDataToList(horizontalRPM, now, horizontalData[0]);
-                addDataToList(verticalRPM, now, verticalData[0]);
+                addDataToList(lf,                now, driveData[0]);
+                addDataToList(rf,                now, driveData[1]);
+                addDataToList(lb,                now, driveData[2]);
+                addDataToList(rb,                now, driveData[3]);
+                addDataToList(anglel,            now, driveData[4]);
+                addDataToList(horizontalRPM,     now, horizontalData[0]);
+                addDataToList(verticalRPM,       now, verticalData[0]);
                 addDataToList(horizontalCurrent, now, horizontalData[1]);
-                addDataToList(horizontalTarget, now, horizontalData[2]);
-                addDataToList(verticalCurrent, now, verticalData[1]);
-                addDataToList(verticalTarget, now, verticalData[2]);
+                addDataToList(horizontalTarget,  now, horizontalData[2]);
+                addDataToList(verticalCurrent,   now, verticalData[1]);
+                addDataToList(verticalTarget,    now, verticalData[2]);
                 if (lf.getData().size() > WINDOW_SIZE) {
-
-                    lf.getData().remove(0);
-                    rf.getData().remove(0);
-                    lb.getData().remove(0);
-                    rb.getData().remove(0);
-                    anglel.getData().remove(0);
-                    horizontalRPM.getData().remove(0);
-                    verticalRPM.getData().remove(0);
-                    horizontalTarget.getData().remove(0);
+                    lf.getData().remove(               0);
+                    rf.getData().remove(               0);
+                    lb.getData().remove(               0);
+                    rb.getData().remove(               0);
+                    anglel.getData().remove(           0);
+                    horizontalRPM.getData().remove(    0);
+                    verticalRPM.getData().remove(      0);
+                    horizontalTarget.getData().remove( 0);
                     horizontalCurrent.getData().remove(0);
-                    verticalTarget.getData().remove(0);
-                    verticalCurrent.getData().remove(0);
+                    verticalTarget.getData().remove(   0);
+                    verticalCurrent.getData().remove(  0);
 
                 }
 
@@ -143,15 +141,15 @@ public class MainController {
                 setLabelValueDouble(Kp1T, Kp1S);
                 setLabelValueDouble(Ki1T, Ki1S);
                 setLabelValueDouble(Kd1T, Kd1S);
-                setLabelValueDouble(s1T, s1S);
-                setLabelValueInt(mip1T, mip1S);
-                setLabelValueInt(map1T, map1S);
+                setLabelValueDouble( s1T, s1S);
+                setLabelValueInt(  mip1T, mip1S);
+                setLabelValueInt(  map1T, map1S);
                 setLabelValueDouble(Kp2T, Kp2S);
                 setLabelValueDouble(Ki2T, Ki2S);
                 setLabelValueDouble(Kd2T, Kd2S);
-                setLabelValueInt(s2T, s2S);
-                setLabelValueInt(mip2T, mip2S);
-                setLabelValueInt(map2T, map2S);
+                setLabelValueInt(    s2T, s2S);
+                setLabelValueInt(  mip2T, mip2S);
+                setLabelValueInt(  map2T, map2S);
 
                 double P1    = Kp1S.getValue();
                 double I1    = Ki1S.getValue();
@@ -165,29 +163,18 @@ public class MainController {
                 double mip2  = mip2S.getValue();
                 double map2  = map2S.getValue();
                 double mas2  = s2S.getValue();
-                if (P1!=lastP1||I1!=lastI1||D1!=lastD1){
-                    ComputerDebugging.sendPIDVertical(P1, I1, D1);
-                }
-                if (P2!=lastP2||I2!=lastI2||D2!=lastD2){
-                    ComputerDebugging.sendPIDHorizontal(P2, I2, D2);
-                }
-                if (mip1!=lastMiP1||map1!=lastMaP1||mas1!=lastMaS1){
-                    ComputerDebugging.sendDataVertical(mip1, map1, mas1);
-                }
-                if (mip2!=lastMiP2||map2!=lastMaP2||mas2!=lastMaS2){
-                    ComputerDebugging.sendDataVertical(mip2, map2, mas2);
-                }
-                if (!messageBuilder.toString().equals("")){
-                    messageBuilder.append("CLEAR,%");
-                    ComputerDebugging.markEndOfUpdate();
-                }
+                if (P1!=lastP1||I1!=lastI1||D1!=lastD1)            ComputerDebugging.sendPIDVertical(P1, I1, D1);
+                if (P2!=lastP2||I2!=lastI2||D2!=lastD2)            ComputerDebugging.sendPIDHorizontal(P2, I2, D2);
+                if (mip1!=lastMiP1||map1!=lastMaP1||mas1!=lastMaS1)ComputerDebugging.sendDataVertical(mip1, map1, mas1);
+                if (mip2!=lastMiP2||map2!=lastMaP2||mas2!=lastMaS2)ComputerDebugging.sendDataVertical(mip2, map2, mas2);
+                if (!messageBuilder.toString().equals(""))         ComputerDebugging.markEndOfUpdate();
 
-                lastP1 =    P1;
-                lastI1 =    I1;
-                lastD1 =    D1;
-                lastMiP1 =  mip1 ;
-                lastMaP1 =  map1 ;
-                lastMaS1 =  mas1 ;
+                lastP1    = P1;
+                lastI1    = I1;
+                lastD1    = D1;
+                lastMiP1  = mip1 ;
+                lastMaP1  = map1 ;
+                lastMaS1  = mas1 ;
                 lastP2    = P2   ;
                 lastI2    = I2   ;
                 lastD2    = D2   ;
@@ -197,6 +184,7 @@ public class MainController {
             });
         },0,200, TimeUnit.MILLISECONDS);
     }
+
 
 
     private void setLabelValueDouble(Label l, Slider s){

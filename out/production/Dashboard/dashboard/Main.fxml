@@ -95,7 +95,7 @@
                         <Label fx:id="Kd2T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="max speed" />
-                        <Slider fx:id="s2S" max="1" majorTickUnit="0.05"  />
+                        <Slider fx:id="s2S" max="1"   />
                         <Label fx:id="s2T" prefHeight="25.0" prefWidth="36.0" />
                         <Separator prefWidth="200.0" />
                         <Label text="min position" />
