@@ -1,0 +1,62 @@
+#rootMain{
+    -fx-background-color: #121212;
+}
+
+.chart{
+    -fx-background-color: transparent;
+}
+
+.chart-legend{
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item{
+    -fx-text-fill: #ffffff;
+}
+
+.chart-title{
+    -fx-text-fill: #ffffff;
+}
+
+.chart-plot-background{
+    -fx-background-color: #000000;
+}
+
+.axis {
+    -fx-tick-label-fill: #ffffff;
+}
+
+.titled-pane{
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #000000;
+}
+
+.titled-pane >  .title{
+    -fx-background-color: #000000;
+}
+
+#label1,#label2,#label3,#label4,#label5,#label6,
+#label7,#label8,#label9,#label10,#label11,#label12{
+    -fx-text-fill: #03DAC6;
+    -fx-font-size: 15;
+}
+
+#Kp1T,#Ki1T,#Kd1T,#s1T,#mip1T,#map1T,
+#Kp2T,#Ki2T,#Kd2T,#s2T,#mip2T,#map2T{
+    -fx-text-fill: #CF6679;
+    -fx-font-size: 12.5;
+}
+
+.slider .thumb{
+    -fx-background-color: #BB86FC;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #6200EE;}
+.default-color1.chart-series-line { -fx-stroke: #BB86FC;}
+.default-color2.chart-series-line { -fx-stroke: #03DAC6;}
+.default-color3.chart-series-line { -fx-stroke: #CF6679;}
+
+.default-color0.chart-line-symbol {-fx-background-color: #6200EE, #6200EE; -fx-background-radius: 0px;  -fx-padding: 3px;}
+.default-color1.chart-line-symbol {-fx-background-color: #BB86FC, #BB86FC; -fx-background-radius: 0px;  -fx-padding: 3px;}
+.default-color2.chart-line-symbol {-fx-background-color: #03DAC6, #03DAC6; -fx-background-radius: 0px;  -fx-padding: 3px;}
+.default-color3.chart-line-symbol {-fx-background-color: #CF6679, #CF6679; -fx-background-radius: 0px;  -fx-padding: 3px;}
